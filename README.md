@@ -25,11 +25,11 @@ Pull the repository and set your `main.tf` source to `<local path>/modules/s3`
 ```git clone git@gitlab-ssh.dxpcloud.net:steve/mongo-s3backup.git```
 
 
-Alternatively, add the source to your `main.tf`using double slash to distinguish between the git repo and module folder and adding the tag or branch as a query (in this case, tag 0.3)
+Alternatively, add the source to your `main.tf`using double slash to distinguish between the git repo and module folder and adding the tag or branch as a query (in this case, tag 1.0)
 
 ```
 module "s3_backup_bucket" {
-  source = "git::ssh://git@gitlab-ssh.dxpcloud.net/steve/mongo-s3backup//modules/s3?ref=0.3"
+  source = "git::ssh://git@gitlab-ssh.dxpcloud.net/steve/mongo-s3backup//modules/s3?ref=1.0"
    ...
 }
 ```
